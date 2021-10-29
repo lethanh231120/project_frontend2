@@ -1245,7 +1245,7 @@ select{
   }
   .category-active-list-function{
     width: 60%;
-    left: 25%;
+    left: 20%;
     bottom: 25%;
   }
   .category-active-list-function-item{
@@ -1700,6 +1700,11 @@ select{
     font-size: 15px;
     margin-top: 17px;
   }
+  .category-active-list-function-item{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
   .category-active-list-price{
     font-size: 15px;
     margin-top: 16px;
@@ -1912,6 +1917,11 @@ select{
   .category-active{
     width: 62vw;
   }
+  .category-active-list-function-item{
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
   .category_product-list-item{
     height: 120px;
   }
@@ -1940,6 +1950,14 @@ select{
   }
   .category_product-list-image{
     width: 50%;
+  }
+  .category-active-list-function{
+    bottom: 33% !important;
+  }
+  .category-active-list-function-item{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
   .nav_right{
     margin-left: -2px;
