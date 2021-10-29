@@ -1687,6 +1687,10 @@ select {
     padding: 60px 0;
   }
 
+  .partner_list .flickity-viewport {
+    height: 145px !important;
+  }
+
   .partner-item {
     padding: 0 18px;
   }
@@ -2296,6 +2300,10 @@ select {
     padding: 56px 0;
   }
 
+  .partner_list .flickity-viewport {
+    height: 200px !important;
+  }
+
   .footer {
     padding: 57px 14px 0 14px;
   }
@@ -2398,6 +2406,10 @@ select {
   .nav_right {
     margin-left: -10px;
   }
+
+  .partner_list .flickity-viewport {
+    height: 140px !important;
+  }
 }
 @media screen and (max-width: 320.98px) {
   .new-product-list .flickity-viewport {
@@ -2419,5 +2431,13 @@ select {
 
   .menu {
     padding: 20px 10px 20px 20px;
+  }
+
+  .partner_list .flickity-viewport {
+    height: 75px !important;
+  }
+
+  .subscribe {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=homepage.css.map */
