@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="./assets/styles/homepage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/scripts/homepage.js"></script>
+  <title>Grose</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="top" id="top"></div>
+    <div class="nav_top d-flex none">
+      <div class="nav_left">
+        Free Delivery: Take advantage of our time to save event
+      </div>
+      <div class="nav_right d-flex">
+        <div class="nav_right-item">
+          <label for="language">Select Language</label>
+          <select id="language">
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="nav_right-item">
+          <label for="currency">Select Currency</label>
+          <select id="currency">
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg  justify-content-between  navbar-light">
+        <div class="navbar-brand d-flex">
+          <div class="navbar-brand-item">
+            <img src="./assets/images/logo.png" alt="Cinque Terre">
+          </div>
+          <div class="navbar_list-icon d-flex">
+            <div class="navbar-icon navbar-toggler cart"><i class="fas fa-shopping-cart"></i>
+            </div>
+            <button class="navbar-toggler button-menu" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="menu navbar-collapse" id="navbarSupportedContent">
+          <div class="button-exit"><i class="fas fa-times"></i></div>
+          <div class="menu-top">
+            <div class="nav_right d-flex">
+              <div class="nav_right-item">
+                <label for="language">Select Language</label>
+                <select id="language">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="nav_right-item">
+                <label for="currency">Select Currency</label>
+                <select id="currency">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="category_search ">
+              <input type="text" placeholder="Search our store">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="navbar-icon-list d-flex pr-2 justify-content-between">
+              <div class="navbar-icon"><i class="far fa-user"></i></div>
+              <div class="navbar-icon heart"><i class="far fa-heart"></i></div>
+              <div class="navbar-icon cart"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+              <div class="nav-ke"></div>
+            </li>
+            <li class="nav-item shop">
+              <a class="nav-link" href="#">SHOP
+                <i class="fas fa-chevron-down desktop"></i>
+                <i class="fas fa-plus tablet"></i></a>
+              <div class="shop-polygon">New</div>
+              <div class="nav-dropdown d-flex">
+                <div class="nav-dropdown-item">
+                  <div class="nav-dropdown-title">SHOP LAYOUT</div>
+                  <div class="nav-dropdown-text">Grid Left Slidebar </div>
+                  <div class="nav-dropdown-text">Grid Right Slidebar</div>
+                  <div class="nav-dropdown-text">Full Width</div>
+                  <div class="nav-dropdown-text">List Left Slidebar</div>
+                  <div class="nav-dropdown-text">List Right Slidebar</div>
+                </div>
+                <div class="nav-dropdown-item">
+                  <div class="nav-dropdown-title">SHOP PAGES</div>
+                  <div class="nav-dropdown-text">Cart</div>
+                  <div class="nav-dropdown-text">Checkout</div>
+                  <div class="nav-dropdown-text">Compare</div>
+                  <div class="nav-dropdown-text">Empty Cart</div>
+                  <div class="nav-dropdown-text">WishLish</div>
+                  <div class="nav-dropdown-text">My Account</div>
+                  <div class="nav-dropdown-text">Login</div>
+                </div>
+                <div class="nav-dropdown-item">
+                  <div class="nav-dropdown-title">PRODUCT SINGLE</div>
+                  <div class="nav-dropdown-text">Simple</div>
+                  <div class="nav-dropdown-text">Affiliate</div>
+                  <div class="nav-dropdown-text">Grouped</div>
+                  <div class="nav-dropdown-text">Variable</div>
+                  <div class="nav-dropdown-text">Left Tab</div>
+                  <div class="nav-dropdown-text">Right Tab</div>
+                </div>
+                <div class="nav-dropdown-item">
+                  <div class="nav-dropdown-title">PRODUCT SINGGLE</div>
+                  <div class="nav-dropdown-text">Singgle Slider</div>
+                  <div class="nav-dropdown-text">Gallery Left</div>
+                  <div class="nav-dropdown-text">Gallery Right</div>
+                  <div class="nav-dropdown-text">Sticky Left</div>
+                  <div class="nav-dropdown-text">Sticky Right</div>
+                </div>
+                <div class="nav-dropdown-item">
+                  <img src="./assets/images/banner/menu-banner.jpg" alt="">
+                </div>
+              </div>
+              <div class="nav-ke"></div>
+            </li>
+            <li class="nav-item desktop">
+              <a class="nav-link" href="#">CUSTOM BLOCK
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="nav-dropdown d-block">
+                <div class="nav-dropdown-list">
+                  <div class="nav-dropdown-list-item">
+                    <div class="nav-dropdown-title">WOMEN IS CLOTHES & FASSHION</div>
+                    <div class="nav-dropdown-text">SHOP WOMEN IS CLOTHING AND ACCESSORIES AND GET INSPIRET BY THE LATEST
+                      FASSHION TRENDS.</div>
+                  </div>
+                  <div class="nav-dropdown-list-item">
+                    <div class="nav-dropdown-title">SIMPLE STYLE</div>
+                    <div class="nav-dropdown-text">A NEW FLATTERING STYLE WITH ALL THE COMFORT OF OUR LAMEN.</div>
+                  </div>
+                  <div class="nav-dropdown-list-item">
+                    <div class="nav-dropdown-title">EASY LAYERS</div>
+                    <div class="nav-dropdown-text">ENDLESS STYLING POSIBILITIES IN A COLLECTION FULL OF VERSATILE
+                      PIECES.</div>
+                  </div>
+                </div>
+                <div class="nav-dropdown-list">
+                  <img src="./assets/images/banner/menu-banner-2.png" alt="">
+                </div>
+              </div>
+              <div class="nav-ke"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG
+                <i class="fas fa-chevron-down desktop"></i>
+                <i class="fas fa-plus tablet"></i>
+              </a>
+              <div class="nav-ke"></div>
+              <div class="nav-dropdown-blog">
+                <div class="nav-dropdown-blog-item ">
+                  Blog Grid <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="nav-dropdown-blog-item ">
+                  Blog List <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="nav-dropdown-blog-item ">
+                  Blog Single <i class="fas fa-angle-right"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item page">
+              <a class="nav-link" href="#">PAGES
+                <i class="fas fa-chevron-down desktop"></i>
+                <i class="fas fa-plus tablet"></i>
+              </a>
+              <div class="page-polygon">New</div>
+              <div class="nav-ke"></div>
+              <div class="nav-dropdown-blog">
+                <div class="nav-dropdown-text">
+                  About Us
+                </div>
+                <div class="nav-dropdown-text">
+                  Frequently Question
+                </div>
+                <div class="nav-dropdown-text">
+                  Privacy Policy
+                </div>
+                <div class="nav-dropdown-text">
+                  404 Pages
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+              <div class="nav-ke"></div>
+            </li>
+          </ul>
+          <div class="list-app">
+            <div class="list-app-item">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="list-app-item">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="list-app-item">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="list-app-item">
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="list-app-item">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-icon-list none d-flex pr-2  justify-content-between">
+          <div class="navbar-icon"><i class="far fa-user"></i></div>
+          <div class="navbar-icon heart"><i class="far fa-heart"></i></div>
+          <div class="navbar-icon cart"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+      </nav>
+      <div class="category_list category nav_category">
+        <div class="category-title"><i class="fas fa-align-left"></i>CATEGORIES</div>
+        <div class="category_list-item">
+          <div class="category-item">
+            <a href="#">Search Terms</a>
+          </div>
+          <div class="category-item">
+            <a href="#">Advanced Search</a>
+          </div>
+          <div class="category-item">
+            <a href="#">Help & Faqs</a>
+          </div>
+          <div class="category-item">
+            <a href="#">Store Location</a>
+          </div>
+          <div class="category-item">
+            <a href="#">Orders & Returns</a>
+          </div>
+          <div class="category-item">
+            <a href="#"><i class="far fa-plus-square"></i>More Categories</a>
+          </div>
+        </div>
+      </div>
+      <div class="category row">
+        <div class="col-lg-3 category-item">
+          <div class="category_list none">
+            <div class="category-title"><i class="fas fa-align-left"></i>CATEGORIES</div>
+            <div class="category_list-item">
+              <div class="category-item">
+                <a href="#">Search Terms</a>
+              </div>
+              <div class="category-item">
+                <a href="#">Advanced Search</a>
+              </div>
+              <div class="category-item">
+                <a href="#">Help & Faqs</a>
+              </div>
+              <div class="category-item">
+                <a href="#">Store Location</a>
+              </div>
+              <div class="category-item">
+                <a href="#">Orders & Returns</a>
+              </div>
+              <div class="category-item">
+                <a href="#"><i class="far fa-plus-square"></i>More Categories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 category-item">
+          <div class="category_search none">
+            <input type="text" placeholder="Search our store">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="col-lg-2 category-item">
+          <div class="category_call ">
+            <p>Call Us: 123 456 789</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-top carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+      <div class="carousel-cell banner-item">
+        <img src="./assets/images/banner/hero-home-1-img-2 .jpg" alt="">
+        <div class="banner-text">
+          <div class="banner-text-top">100% HEALTHY & AFFORDABLE</div>
+          <div class="banner-text-organic">ORGANIC FRESH FRUITS</div>
+          <div class="banner-text-small">Small Changes Big Diffrence</div>
+          <div class="banner-text-button">SHOP NOW</div>
+        </div>
+      </div>
+      <div class="carousel-cell banner-item">
+        <img src="./assets/images/banner/hero-home-1-img-1.jpg" alt="">
+        <div class="banner-text">
+          <div class="banner-text-top">100% HEALTHY & AFFORDABLE</div>
+          <div class="banner-text-organic">ORGANIC VEGETABLES</div>
+          <div class="banner-text-small">Small Changes Big Diffrence</div>
+          <div class="banner-text-button">SHOP NOW</div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_button row">
+      <div class="col-lg-6 col-sm-6 col-12 banner-button-item">
+        <div class="banner-button-image">
+          <img src="./assets/images/banner/banner-home-1-img-1-wide.jpg" alt="">
+        </div>
+        <div class="banner-button-text text-center">
+          <div class="banner-button-green">Green Vegetable</div>
+          <div class="banner-button-organic">100% ORGANIC</div>
+          <div class="banner-button-healthy">Healthy Nutrition</div>
+          <div class="banner-button-button">BUY NOW</div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-6 col-12 banner-button-item">
+        <div class="banner-button-image">
+          <img src="./assets/images/banner/banner-home-1-img-2-wide.jpg" alt="">
+        </div>
+        <div class="banner-button-text text-center">
+          <div class="banner-button-green">Fresh Herbs</div>
+          <div class="banner-button-organic">SPINACH</div>
+          <div class="banner-button-healthy">Healthy Food</div>
+          <div class="banner-button-button">BUY NOW</div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="category_product">
+        <div class="category_top d-flex justify-content-between">
+          <div class="category-text">Top Categories</div>
+          <div class="category-button">More Categories<i class="fas fa-angle-right"></i></div>
+        </div>
+        <div class="category_product-list">
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-6.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-7.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-8.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-9.jpg" alt="">
+            </div>
+          </div>
+          <div class="category_product-list-item d-flex">
+            <div class="category_product-list-left">
+              <div class="category_product-list-name">Pure egg Collection</div>
+              <div class="category_product-list-number">2 Products</div>
+            </div>
+            <div class="category_product-list-image">
+              <img src="./assets/images/product/category-home-1-img-10.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="category_top d-flex justify-content-between">
+          <div class="category-text">Top Categories</div>
+          <div class="category-active d-flex justify-content-between">
+            <div class="category-active-item active">Fruites</div>
+            <div class="category-active-item">Milk</div>
+            <div class="category-active-item">Fish</div>
+          </div>
+        </div>
+        <div class="category-active-list row">
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-1.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-34%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-3.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-info">
+                <div class="category-active-list-info-item">754 Days</div>
+                <div class="category-active-list-info-item">6 Hours</div>
+                <div class="category-active-list-info-item">4 Mins</div>
+                <div class="category-active-list-info-item">19 Sec</div>
+              </div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-5.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-31%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-7.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-34%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-2.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-4.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-6.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-8.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-info">
+                <div class="category-active-list-info-item">754 Days</div>
+                <div class="category-active-list-info-item">6 Hours</div>
+                <div class="category-active-list-info-item">4 Mins</div>
+                <div class="category-active-list-info-item">19 Sec</div>
+              </div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-active-list row">
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-2.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-4.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-6.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-8.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-info">
+                <div class="category-active-list-info-item">754 Days</div>
+                <div class="category-active-list-info-item">6 Hours</div>
+                <div class="category-active-list-info-item">4 Mins</div>
+                <div class="category-active-list-info-item">19 Sec</div>
+              </div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-1.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-34%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-3.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-10%</div>
+              <div class="category-active-list-info">
+                <div class="category-active-list-info-item">754 Days</div>
+                <div class="category-active-list-info-item">6 Hours</div>
+                <div class="category-active-list-info-item">4 Mins</div>
+                <div class="category-active-list-info-item">19 Sec</div>
+              </div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-5.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-31%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-4 col-12 active-item">
+            <div class="category-active-list-item">
+              <div class="category-active-list-image">
+                <img src="./assets/images/product/product-home-1-img-7.jpg" alt="">
+              </div>
+              <div class="category-active-list-text text-center">
+                <div class="category-active-list-star">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="category-active-list-name">
+                  Fresh green vegetable
+                </div>
+                <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+              </div>
+              <div class="category-active-list-sale">-34%</div>
+              <div class="category-active-list-function">
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="category-active-list-function-item">
+                  <i class="far fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grocery">
+      <div class="grocery_image">
+        <img src="./assets/images/banner/banner-home-1-img-1-extra-large-wide.jpg" alt="">
+      </div>
+      <div class="grocery_text">
+        <div class="grocery_text-top">SPECIAL DISCOUNT</div>
+        <div class="grocery_text-title">For All Grocery Products</div>
+        <div class="grocery_text-sale">Take now 20% off for all grocer product</div>
+        <div class="grocery_text-button">SHOP NOW</div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="new-product category_top d-flex justify-content-between row">
+        <div class="category-text">New Products</div>
+        <div class="category-button">More Products<i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class=" new-product-list main-carousel"
+        data-flickity='{"cellAlign": "left", "contain": true,"wrapAround": true,"freescroll":true}'>
+        <div class="col col-lg-3 col-sm-6 col-md-4 col-12 new-product-list-item carousel-cell">
+          <div class="category-active-list-item">
+            <div class="category-active-list-image">
+              <img src="./assets/images/product/product-home-1-img-1.jpg" alt="">
+            </div>
+            <div class="category-active-list-text text-center">
+              <div class="category-active-list-star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="category-active-list-name">
+                Fresh green vegetable
+              </div>
+              <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+            </div>
+            <div class="category-active-list-sale">-34%</div>
+            <div class="category-active-list-function">
+              <div class="category-active-list-function-item">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-sm-6 col-md-4 col-12 new-product-list-item carousel-cell">
+          <div class="category-active-list-item">
+            <div class="category-active-list-image">
+              <img src="./assets/images/product/product-home-1-img-3.jpg" alt="">
+            </div>
+            <div class="category-active-list-text text-center">
+              <div class="category-active-list-star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="category-active-list-name">
+                Fresh green vegetable
+              </div>
+              <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+            </div>
+            <div class="category-active-list-sale">-10%</div>
+            <div class="category-active-list-info">
+              <div class="category-active-list-info-item">754 Days</div>
+              <div class="category-active-list-info-item">6 Hours</div>
+              <div class="category-active-list-info-item">4 Mins</div>
+              <div class="category-active-list-info-item">19 Sec</div>
+            </div>
+            <div class="category-active-list-function">
+              <div class="category-active-list-function-item">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-sm-6 col-md-4 col-12 new-product-list-item carousel-cell">
+          <div class="category-active-list-item">
+            <div class="category-active-list-image">
+              <img src="./assets/images/product/product-home-1-img-5.jpg" alt="">
+            </div>
+            <div class="category-active-list-text text-center">
+              <div class="category-active-list-star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="category-active-list-name">
+                Fresh green vegetable
+              </div>
+              <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+            </div>
+            <div class="category-active-list-sale">-31%</div>
+            <div class="category-active-list-function">
+              <div class="category-active-list-function-item">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-sm-6 col-md-4 col-12 new-product-list-item carousel-cell">
+          <div class="category-active-list-item">
+            <div class="category-active-list-image">
+              <img src="./assets/images/product/product-home-1-img-7.jpg" alt="">
+            </div>
+            <div class="category-active-list-text text-center">
+              <div class="category-active-list-star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="category-active-list-name">
+                Fresh green vegetable
+              </div>
+              <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+            </div>
+            <div class="category-active-list-sale">-34%</div>
+            <div class="category-active-list-function">
+              <div class="category-active-list-function-item">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-sm-6 col-md-4 col-12 new-product-list-item carousel-cell">
+          <div class="category-active-list-item">
+            <div class="category-active-list-image">
+              <img src="./assets/images/product/product-home-1-img-1.jpg" alt="">
+            </div>
+            <div class="category-active-list-text text-center">
+              <div class="category-active-list-star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="category-active-list-name">
+                Fresh green vegetable
+              </div>
+              <div class="category-active-list-price">$19.00 <span>629.00</span></div>
+            </div>
+            <div class="category-active-list-sale">-34%</div>
+            <div class="category-active-list-function">
+              <div class="category-active-list-function-item">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="category-active-list-function-item">
+                <i class="far fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client text-center ">
+      <div class="client_title">Our Client Say!</div>
+      <div class="client_text main-carousel"
+        data-flickity='{"cellAlign": "left", "contain": true,"wrapAround": true,"freescroll":true,"lazyLoad": 1}'>
+        <div class="col-12 text-center carousel-cell">
+          <div class="client_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad laboriosam quaerat
+            eveniet
+            commodi animi exercitationem nihil adipisci suscipit alias similique eius ex, dolorem aliquid aperiam fugiat
+            delectus sed quisquam dolores?</div>
+          <div class="client_image">
+            <img src="./assets/images/testumonial/testimonial-home-1-img-1.png" alt="">
+          </div>
+          <div class="client_name">NIROK KHAN / CEO </div>
+        </div>
+        <div class="col-12 text-center carousel-cell">
+          <div class="client_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad laboriosam quaerat
+            eveniet
+            commodi animi exercitationem nihil adipisci suscipit alias similique eius ex, dolorem aliquid aperiam fugiat
+            delectus sed quisquam dolores?</div>
+          <div class="client_image">
+            <img src="./assets/images/testumonial/testimonial-home-1-img-2.png" alt="">
+          </div>
+          <div class="client_name">NIROK KHAN / CEO </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="blog category_top d-flex justify-content-between">
+        <div class="category-text">Our Latest New</div>
+        <div class="category-button">More Blogs<i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="blog_list main-carousel"
+        data-flickity='{"cellAlign": "left", "contain": true,"wrapAround": true,"freescroll":true}'>
+        <div class="col-lg-4 col-sm-6 col-md-4 blog-item carousel-cell">
+          <div class="blog_image">
+            <img src="./assets/images/blog/blog-feed-home-1-img-1.jpg" alt="">
+          </div>
+          <div class="blog_text">
+            <div class="blog-title">Consectetur Adipisicing</div>
+            <div class="blog-day">By Partner 2020 / July 23, 2020 </div>
+            <div class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            <div class="blog-button">Continue Reading</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-4 blog-item carousel-cell">
+          <div class="blog_image">
+            <img src="./assets/images/blog/blog-feed-home-1-img-2.jpg" alt="">
+          </div>
+          <div class="blog_text">
+            <div class="blog-title">Consectetur Adipisicing</div>
+            <div class="blog-day">By Partner 2020 / July 23, 2020 </div>
+            <div class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            <div class="blog-button">Continue Reading</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-4 blog-item carousel-cell">
+          <div class="blog_image">
+            <img src="./assets/images/blog/blog-feed-home-1-img-3.jpg" alt="">
+          </div>
+          <div class="blog_text">
+            <div class="blog-title">Consectetur Adipisicing</div>
+            <div class="blog-day">By Partner 2020 / July 23, 2020 </div>
+            <div class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            <div class="blog-button">Continue Reading</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-4 blog-item carousel-cell">
+          <div class="blog_image">
+            <img src="./assets/images/blog/blog-feed-home-1-img-4.jpg" alt="">
+          </div>
+          <div class="blog_text">
+            <div class="blog-title">Consectetur Adipisicing</div>
+            <div class="blog-day">By Partner 2020 / July 23, 2020 </div>
+            <div class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            <div class="blog-button">Continue Reading</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe text-center">
+      <div class="subscribe-title">Subscribe To Our Newsletter</div>
+      <form method="" action="" id="form_register" onsubmit="return validateEmail();">
+        <div class="subscribe_form">
+          <i class="far fa-envelope subscribe-icon"></i>
+          <input class="subscribe-input" name="email" id="email" type="email" placeholder="Your mail address">
+          <button type="submit" name="register" id="register" class="subscribe-button">Subscribe</button>
+        </div>
+        <span id="email_error"></span>
+      </form>
+    </div>
+    <div class="content">
+      <div class="partner">
+        <div class="partner_list main-carousel"
+          data-flickity='{"cellAlign": "left", "contain": true,"wrapAround": true,"freescroll":true}'>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-1.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-2.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-3.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-4.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-5.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-6.png" alt="">
+            </div>
+          </div>
+          <div class="partner-item col-lg-2 col-sm-3 col-6 carousel-cell">
+            <div class="partner-image">
+              <img src="./assets/images/company-logo/company-logo-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_top row">
+          <div class="col-lg-4 col-sm-5 footer-item">
+            <div class="footer-logo">
+              <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div class="footer-address"><i class="fas fa-home"></i> No: 58 A, your Street, Baltimore, USA 4508</div>
+            <div class="footer-phone"><i class="fas fa-phone"></i> +0123456789</div>
+            <div class="footer-email"><i class="far fa-envelope"></i>subport@somemail.com</div>
+            <div class="footer-list d-flex">
+              <div class="footer-list-item"><i class="fab fa-facebook-f"></i></div>
+              <div class="footer-list-item"><i class="fab fa-twitter"></i></div>
+              <div class="footer-list-item"><i class="fab fa-youtube"></i></div>
+              <div class="footer-list-item"><i class="fab fa-google-plus-g"></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 footer-item">
+            <div class="footer-title">INFORMATION</div>
+            <div class="footer-text">Delivery Information</div>
+            <div class="footer-text">Advanced Search</div>
+            <div class="footer-text">Helps & Faqs</div>
+            <div class="footer-text">Store Location</div>
+            <div class="footer-text">Orders & Returns</div>
+            <div class="footer-text">Deliveries</div>
+            <div class="footer-text">Refunds & Returns</div>
+          </div>
+          <div class="col-lg-2 col-sm-3 footer-item">
+            <div class="footer-title">OUR COMPANY</div>
+            <div class="footer-text">Delivery</div>
+            <div class="footer-text">Legal Notice</div>
+            <div class="footer-text">Sitemap</div>
+            <div class="footer-text">Secure payment</div>
+            <div class="footer-text">Blog</div>
+            <div class="footer-text">About Us</div>
+            <div class="footer-text">Carrers</div>
+          </div>
+          <div class="col-lg-2 col-sm-3 footer-item">
+            <div class="footer-title">MY ACCOUNT</div>
+            <div class="footer-text">Search Terms</div>
+            <div class="footer-text">Advanced Search</div>
+            <div class="footer-text">Helps & Faqs</div>
+            <div class="footer-text">Store Location</div>
+            <div class="footer-text">Orders & Returns</div>
+            <div class="footer-text">Deliveries</div>
+            <div class="footer-text">Refunds & Returns</div>
+          </div>
+          <div class="col-lg-2 col-sm-4 footer-item">
+            <div class="footer-title">OPENNING TIME</div>
+            <div class="footer-text">Mon-Fri:8AM-10PM</div>
+            <div class="footer-text">Sat:9AM-8PM</div>
+            <div class="footer-text">Sun: 14hPM-18HPM</div>
+            <div class="footer-text">Mon-Fri:8AM-10PM</div>
+            <div class="footer-text">We WorK All The Holidays</div>
+            <div class="footer-text footer-button">Downloa our app</div>
+          </div>
+        </div>
+        <div class="footer_buttom d-flex justify-content-between">
+          <div class="footer-left">
+            Copyright <i class="far fa-copyright"></i><span> HasThemes</span>.All Rights Reserved
+          </div>
+          <div class="footer-right">
+            <img src="./assets/images/company-logo/payment.png" alt="">
+          </div>
+        </div>
+        <div class="footer-icon">
+          <a href="#top"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
